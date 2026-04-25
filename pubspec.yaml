@@ -1,5 +1,7 @@
 name: dir_relay
-description: "DirRelay is a Flutter app for relaying folders and data to a remote server via SSH. Built for automation and self-hosted setups like Immich."
+description: "DirRelay is a Flutter app for relaying folders and data to a
+  remote server via SSH. Built for automation and self-hosted setups like
+  Immich."
 publish_to: "none"
 version: 0.1.0
 
@@ -9,11 +11,34 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  #---- Base packages for core functionalities
+  flutter_bloc: ^9.1.1 # State management with BLoC pattern
+  hydrated_bloc: ^11.0.0 # Persistent state management with BLoC
+  get_it: ^9.2.1 # Dependency injection
+  path_provider: ^2.1.5 # Access to commonly used locations on the filesystem
+  go_router: ^17.2.2 # Routing and navigation
+  #- Internationalization and localization packages
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+  #-
+  dynamic_path_url_strategy: ^1.0.0 # Dynamically set URL strategy based on platform
+  #- Window management and screen retrieval for desktop platforms
+  window_manager: ^0.5.1
+  screen_retriever: ^0.2.0
+  #-
+  #----
+  introduction_screen: ^4.0.0 # Onboarding screens
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  # For config look for the flutter_launcher_icons.yaml file in the root directory.
+  flutter_launcher_icons: ^0.14.4 # Generate app icons.
+  # For config look for the package_rename_config.yaml file in the root directory.
+  package_rename: ^1.10.1 # Rename package name, bundle identifier, app name, etc.
 
 flutter:
   uses-material-design: true
+  generate: true # Enables generation of localization files
