@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "dir_relay" "\0"
+            VALUE "CompanyName", "ilCONDORA" "\0"
+            VALUE "FileDescription", "DirRelay" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "dir_relay" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "dir_relay.exe" "\0"
-            VALUE "ProductName", "dir_relay" "\0"
+            VALUE "InternalName", "DirRelay" "\0"
+            VALUE "LegalCopyright", "Copyright ©️ 2026 ilCONDORA. All rights reserved." "\0"
+            VALUE "OriginalFilename", "dirrelay-win.exe" "\0"
+            VALUE "ProductName", "DirRelay" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

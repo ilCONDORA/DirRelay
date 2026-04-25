@@ -1,0 +1,28 @@
+# if config file exists in either pubspec.yaml or root path: 'dart run package_rename'
+# flavour are supported, see package documentation.
+package_rename_config:
+  android:
+    app_name: DirRelay # (String) The display name of the android app
+    package_name: com.ilcondora.dirrelay # (String) The package name of the android app
+    lang: kotlin # (Optional) (String) The android development language {kotlin(default) or java}
+
+  ios:
+    app_name: DirRelay # (String) The display name of the ios app
+    bundle_name: dirrelay # (String) The bundle name of the ios app
+    package_name: com.ilcondora.dirrelay # (String) The product bundle identifier of the ios app
+
+  linux:
+    app_name: DirRelay # (String) The window title of the linux app
+    package_name: com.ilcondora.dirrelay # (String) The application id of the linux app
+    exe_name: dirrelay-linux # (String) The executable name (binary name) of the linux app
+
+  macos:
+    app_name: DirRelay # (String) The product name of the macos app
+    package_name: com.ilcondora.dirrelay # (String) The product bundle identifier of the macos app
+    copyright_notice: Copyright ©️ 2026 ilCONDORA. All rights reserved. # (String) The product copyright of the macos app
+
+  windows:
+    app_name: DirRelay # (String) The window title & software name of the windows app
+    organization: ilCONDORA # (String) The organization name (company name) of the windows app
+    copyright_notice: Copyright ©️ 2026 ilCONDORA. All rights reserved. # (String) The legal copyright of the windows app
+    exe_name: dirrelay-win # (String) The executable name (binary name) of the windows app
